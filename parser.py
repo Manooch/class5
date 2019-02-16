@@ -42,11 +42,19 @@ print(data.shape)
 
 #2. "organize" that file,...
 # 2a. access any row "pandas access data by column"
+print(data.iloc[3:4,:])
 # 2b. access any column "pandas access data by row"
+print(data.iloc[:3, -2:])
 # 2c. access any value "pandas access specific data by loacation"
 
+print(data.iloc[3,4])
 
 
- 
+#compute some "summary statistics"
+
+import numpy as np
+
+print(np.mean(data))
+print(np.std(data)) 
 
 
